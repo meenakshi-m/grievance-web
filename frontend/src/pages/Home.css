@@ -1,0 +1,158 @@
+/* Basic resets and styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #171e21, #2a2929, #050000); /* Cool gradient background */
+    color: #fff; /* White text */
+    height: 100%;
+  }
+  
+  /* Container for the entire home page */
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Main content area */
+  .main-content {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  /* Text section styles */
+  .text-section {
+    flex: 1;
+    max-width: 50%;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  .text-section h1 {
+    font-size: 4em;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f7f7f7; /* Light text color */
+  }
+  
+  .subtext {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #d271e6; /* Gold color for subtext */
+  }
+  
+  .cta-button {
+    background-color: linear-gradient(135deg, #f093fb 0%, #8e57f5 100%); /* Gold color */
+    color: #171e21;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .cta-button:hover {
+    background-color:#bf68ca;
+  }
+  
+  /* Visual section */
+  .visual-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feature-carousel {
+    width: 80%; /* Adjust width of the carousel */
+    animation: slideIn 2s ease-in-out;
+  }
+  
+  .carousel-slide {
+    background: linear-gradient(135deg, #f093fb 0%, #8e57f5 100%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-slide h3 {
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+  
+  .carousel-slide p {
+    font-size: 1.2em;
+  }
+  
+  /* Navbar styling for this layout */
+  .navbar {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Blur effect for the navbar */
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #f0a500; /* Hover effect */
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-section, .visual-section {
+      max-width: 100%;
+    }
+  
+    .text-section h1 {
+      font-size: 3em;
+    }
+  
+    .feature-carousel {
+      width: 100%; /* Full width carousel on mobile */
+    }
+  
+    .carousel-slide {
+      padding: 20px;
+    }
+  
+    .cta-button {
+      font-size: 1em;
+      padding: 10px 20px;
+    }
+  }
+  

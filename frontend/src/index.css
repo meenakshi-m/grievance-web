@@ -1,0 +1,37 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Updated font */
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .navbar {
+    background-color: #343a40;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .navbar a:hover {
+    color: #f0a500; /* New color on hover */
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
